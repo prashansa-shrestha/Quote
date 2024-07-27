@@ -1,0 +1,68 @@
+body,
+html,
+#root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f0f0f0; /* Light background color */
+  font-family: "Arial", sans-serif;
+}
+
+.quote-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.quote-content {
+  max-width: 600px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.quote-text {
+  font-size: 1.5em;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.quote-author {
+  font-size: 1.2em;
+  color: #555;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .quote-content {
+    max-width: 90%;
+  }
+
+  .quote-text {
+    font-size: 1.2em;
+  }
+
+  .quote-author {
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 480px) {
+  .quote-text {
+    font-size: 1em;
+  }
+
+  .quote-author {
+    font-size: 0.9em;
+  }
+}
